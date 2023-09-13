@@ -7,11 +7,11 @@
             Property = new List<int>();
         }
 
-        public List<int>? Property { get; }
+        public List<int> Property { get; }
 
         public void Method()
         {
-            List<int> field = new List<int>();
+            List<int> local = new List<int>();
         }
     }
 
@@ -21,11 +21,11 @@
         {
         }
 
-        public List<int>? Property { get; } = new(); //no capacity required
+        public List<int> Property { get; } = new(); //no capacity required
 
         public void Method()
         {
-            List<int> field = new(100); //capacity required here
+            List<int> local = new(100); //capacity required here
         }
     }
 }
