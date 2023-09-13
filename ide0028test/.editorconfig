@@ -1,0 +1,6 @@
+[*.cs]
+
+dotnet_analyzer_diagnostic.severity = default
+
+dotnet_diagnostic.IDE0028.severity = error
+dotnet_style_collection_initializer = true:error
